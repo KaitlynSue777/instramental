@@ -1,5 +1,5 @@
 #define MQ2pin (0)
-
+#WE LEFT THIS ALL AS IT. THIS IS DEFINING WHERE THE PINS ARE THEN WE FOLLOWED THE SCHEMATIC THE WEBSITE GAVE US
 float sensorValue;  //variable to store sensor value
 
 void setup()
@@ -8,7 +8,7 @@ void setup()
   Serial.println("Gas sensor warming up!");
   delay(20000); // allow the MQ-6 to warm up
 }
-
+#THE CODE ABOVE TELLS US IF OUT MQ2 HAS HEATED UP AND IS READY TO COLLECT DATA.
 void loop()
 {
   sensorValue = analogRead(MQ2pin); // read analog input pin 0
